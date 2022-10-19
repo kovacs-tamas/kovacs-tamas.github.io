@@ -1,3 +1,16 @@
 <html>
-  <iframe src="https://epr-wpn-dev.eportrait.de/" width="400"></iframe>
+  <iframe
+    src="https://epr-wpn-dev.eportrait.de/"
+    id="iframeId"
+    width="400"
+  ></iframe>
+  <script>
+    window.addEventListener('message', ({ data }) => {
+      if (data.from === 'EPORTRAIT_UI') {
+        const iframe = document.getElementById('iframeId');
+        console.log(data);
+        iframe.height = data.height;
+      }
+    });
+  </script>
 </html>
