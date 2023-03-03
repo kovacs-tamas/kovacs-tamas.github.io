@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script>
+      window.addEventListener('message', ({ data }) => {
+        if (data.from === 'EPORTRAIT_UI') {
+          console.log(data);
+          const iframe = document.getElementById('ui-iframe');
+          iframe.height = data.height;
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Hey</h1>
+    <iframe
+      id="ui-iframe"
+      width="80%"
+      src="https://localhost:3000/"
+      style="margin: 0px auto"
+    ></iframe>
+  </body>
+</html>
