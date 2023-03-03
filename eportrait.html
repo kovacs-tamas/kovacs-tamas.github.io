@@ -1,18 +1,26 @@
 <html>
-  <iframe
-    src="https://epr-wpn-dev.eportrait.de/"
-    frameborder="0"
-    id="iframeId"
-    width="400"
-    scrolling="no"
-  ></iframe>
-  <script>
-    window.addEventListener('message', ({ data }) => {
-      if (data.from === 'EPORTRAIT_UI') {
-        const iframe = document.getElementById('iframeId');
-        console.log(data);
-        iframe.height = data.height;
-      }
-    });
-  </script>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <script>
+      window.addEventListener('message', ({ data }) => {
+        if (data.from === 'EPORTRAIT_UI') {
+          console.log(data);
+          const iframe = document.getElementById('ui-iframe');
+          iframe.height = data.height;
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Hey</h1>
+    <iframe
+      id="ui-iframe"
+      width="80%"
+      src="https://epr-wpn-dev.eportrait.de/"
+      style="margin: 0px auto"
+    ></iframe>
+  </body>
 </html>
