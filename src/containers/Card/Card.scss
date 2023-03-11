@@ -1,8 +1,8 @@
 .card {
   position: fixed;
   bottom: 0;
-  right: 20px;
-  left: 20px;
+  right: 0;
+  left: 0;
   z-index: 999;
   h1 {
     color: #343434;
@@ -48,5 +48,13 @@
     color: gray;
     font-size: 14px;
     font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .card {
+    div {
+      border-radius: 0;
+    }
   }
 }
