@@ -1,0 +1,44 @@
+.card {
+    position: fixed;
+    bottom: 20px;
+    right:  20PX;
+    left: 20px;
+    z-index: 999;
+    div {
+        border-radius: 20px;
+        display: block;
+        width: 90%;
+        max-width: 400px;
+        background-color: rgba(240, 240, 240, 0.9);
+        position: relative;
+        margin: 0 auto ;
+        padding: 20px 20px 10px 20px;
+
+        .tamas {
+            outline: none;
+            width: 120px;
+            border-radius: 60px;
+            position: absolute;
+            border: 2px solid white;
+            background-color: white;
+            top: -40px;
+            right: 20px;
+            -webkit-transition: 0.5s ease-in;
+            transition: 0.5s ease-in;
+            -o-box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
+            -ms-box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
+            -webkit-box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
+            box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
+            }
+    }
+    a {
+        color: red;
+        padding-right: 10px;
+    }
+    em {
+        font-style: italic;
+        color: gray;
+        font-size: 14px;
+        font-weight: normal ;
+    }
+}

@@ -1,0 +1,374 @@
+html {
+  background-color: black;
+//   background: white;
+//   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#c8c8c8));
+//   background: linear-gradient(to bottom, white, #c8c8c8);
+//   padding: 0;
+//   height: 100vh;
+//   margin: 0;
+  
+}
+
+body {
+//   background: transparent;
+  font: normal normal normal 14px/16px "Helvetica Neue", Arial, sans-serif;
+//   line-height: 22px;
+//   padding: 0;
+//   margin: 0;
+//   height: 100vh;
+}
+
+// section {
+//   position: relative;
+// }
+
+// .rounded-10 {
+//   border-radius: 3px;
+// }
+
+// .shadowed {
+//   -webkit-box-shadow: 0 0 8px rgba(100, 100, 100, 0.2);
+//   box-shadow: 0 0 8px rgba(100, 100, 100, 0.2);
+// }
+
+// .button {
+//   -webkit-box-flex: 1;
+//   -webkit-flex-grow: 1;
+//   -ms-flex-positive: 1;
+//   flex-grow: 1;
+//   background-color: white;
+//   -webkit-box-shadow: 0 0 8px rgba(100, 100, 100, 0.2);
+//   box-shadow: 0 0 8px rgba(100, 100, 100, 0.2);
+//   color: #c8c8c8;
+//   display: block;
+//   height: 60px;
+//   margin: 0 6px 6px 0px;
+//   -webkit-transition: .6s ease-in;
+//   transition: .6s ease-in;
+//   -webkit-box-align: center;
+//   -webkit-align-items: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   -webkit-box-pack: center;
+//   -webkit-justify-content: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+//   display: -webkit-box;
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display: flex;
+//   font-size: 26px;
+//   border-radius: 3px;
+// }
+
+// .linkedin {
+//   -webkit-transition: 0.5s;
+//   transition: 0.5s;
+// }
+
+// .linkedin img {
+//   width: 26px;
+//   height: 26px;
+//   margin: 4px;
+// }
+
+// .linkedin:hover,
+// .linkedin:active {
+//   background-color: #1884bc;
+// }
+
+// .linkedin:hover img,
+// .linkedin:active img {
+//   fill: white;
+// }
+
+// .twitter {
+//   -webkit-transition: 0.5s;
+//   transition: 0.5s;
+// }
+
+// .twitter img {
+//   width: 26px;
+//   height: 26px;
+//   margin: 4px;
+// }
+
+// .twitter img .logo {
+//   fill: #c8c8c8;
+// }
+
+// .twitter:hover,
+// .twitter:active {
+//   background-color: #55acee;
+// }
+
+// .twitter:hover .logo,
+// .twitter:active .logo {
+//   fill: white;
+// }
+
+// .github {
+//   -webkit-transition: 0.5s;
+//   transition: 0.5s;
+// }
+
+// .github img {
+//   width: 26px;
+//   height: 26px;
+//   margin: 4px;
+// }
+
+// .github img .logo {
+//   fill: #c8c8c8;
+// }
+
+// .github:hover,
+// .github:active {
+//   background-color: #333333;
+// }
+
+// .github:hover .logo,
+// .github:active .logo {
+//   fill: white;
+// }
+
+// .jsfiddle {
+//   -webkit-transition: 0.5s;
+//   transition: 0.5s;
+// }
+
+// .jsfiddle svg {
+//   width: 26px;
+//   height: 26px;
+//   margin: 4px;
+// }
+
+// .jsfiddle svg .logo {
+//   fill: #c8c8c8;
+// }
+
+// .jsfiddle:hover,
+// .jsfiddle:active {
+//   background-color: #098ef6;
+// }
+
+// .jsfiddle:hover .logo,
+// .jsfiddle:active .logo {
+//   fill: white;
+// }
+
+// .medium {
+//   -webkit-transition: 0.5s;
+//   transition: 0.5s;
+// }
+
+// .medium svg {
+//   width: 26px;
+//   height: 26px;
+//   margin: 4px;
+// }
+
+// .medium svg .logo {
+//   fill: #c8c8c8;
+// }
+
+// .medium:hover,
+// .medium:active {
+//   background-color: #00ab6b;
+// }
+
+// .medium:hover .logo,
+// .medium:active .logo {
+//   fill: white;
+// }
+
+// .vape {
+//   -webkit-transition: 0.5s;
+//   transition: 0.5s;
+// }
+
+// .vape svg {
+//   width: 26px;
+//   height: 26px;
+//   margin: 4px;
+// }
+
+// .vape svg .logo {
+//   fill: #c8c8c8;
+// }
+
+// .vape:hover,
+// .vape:active {
+//   background-color: #dc5ae8;
+// }
+
+// .vape:hover .logo,
+// .vape:active .logo {
+//   fill: white;
+// }
+
+// .vape svg {
+//   height: 35px;
+//   width: 35px;
+//   margin: 0;
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// .tamas {
+//   outline: none;
+//   width: 120px;
+//   border-radius: 60px;
+//   position: absolute;
+//   border: 2px solid white;
+//   background-color: white;
+//   top: 20px;
+//   right: 20px;
+//   -webkit-transition: 0.5s ease-in;
+//   transition: 0.5s ease-in;
+//   -o-box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
+//   -ms-box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
+//   -webkit-box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
+//   box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
+// }
+
+// .tamas:hover {
+//   width: 200px;
+//   border-radius: 100px;
+//   -webkit-border-radius: 100px;
+//   -moz-border-radius: 100px;
+// }
+
+// article {
+//   display: block;
+//   background-color: rgba(255, 255, 255, 0.8);
+//   padding: 0.6em 2em;
+//   margin: 0 auto 6px auto;
+//   padding: 4px 10px 16px 20px;
+// }
+
+// .work {
+//   z-index: 13;
+// }
+
+// .nosmoke {
+//   /*border: 5px dashed rgb(255, 139, 0);*/
+// }
+
+// .level1 {
+//   color: rgba(20, 20, 20, 0.1);
+// }
+
+// .level2 {
+//   color: rgba(20, 20, 20, 0.2);
+// }
+
+// .level3 {
+//   color: rgba(20, 20, 20, 0.3);
+// }
+
+// .level4 {
+//   color: rgba(20, 20, 20, 0.4);
+// }
+
+// .level5 {
+//   color: rgba(20, 20, 20, 0.5);
+// }
+
+// .level6 {
+//   color: rgba(20, 20, 20, 0.6);
+// }
+
+// .level7 {
+//   color: rgba(20, 20, 20, 0.7);
+// }
+
+// .level8 {
+//   color: rgba(20, 20, 20, 0.8);
+// }
+
+// .level9 {
+//   color: rgba(20, 20, 20, 0.9);
+// }
+
+// .level10 {
+//   color: #141414;
+// }
+
+// section a {
+//   color: #55acee;
+// }
+
+// h1 {
+//   color: #55acee;
+//   padding: 14px 10px 0px 10px;
+//   font-size: 24px;
+//   margin: 0;
+//   text-shadow: 1px 1px 2px white;
+// }
+
+// h2 {
+//   color: #bebebe;
+//   padding: 4px 10px 20px 10px;
+//   font-size: 14px;
+//   margin: 0;
+//   font-weight: normal;
+// }
+
+// h3 {
+//   color: #55acee;
+//   padding: 14px 0px 4px 0px;
+//   margin: 0;
+// }
+
+// @media screen and (min-width: 500px) {
+//   nav {
+//     float: left;
+//     width: 25%;
+//     max-width: 140px;
+//     position: relative;
+//     margin-left: 5px;
+//   }
+
+//   section {
+//     position: relative;
+//     overflow: auto;
+//     padding: 0;
+//     margin-right: 5px;
+//   }
+
+//   body {
+//     max-width: 700px;
+//   }
+// }
+
+// @media screen and (max-width: 499px) {
+//   section {
+//     padding-top: 2px;
+//     margin: 3px 5px;
+//   }
+
+//   nav {
+//     display: -webkit-box;
+//     display: -webkit-flex;
+//     display: -ms-flexbox;
+//     display: flex;
+//     margin: 3px 5px;
+//   }
+
+//   nav a {
+//     -webkit-flex-basis: 1;
+//     -ms-flex-preferred-size: 1;
+//     flex-basis: 1;
+//   }
+
+//   nav .button:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+// footer {
+//   padding: 4px 10px 16px 20px;
+// }
