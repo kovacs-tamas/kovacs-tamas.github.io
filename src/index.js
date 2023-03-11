@@ -12,8 +12,8 @@ import './index.scss';
 const App = () => {
   let routes = useRoutes([
     { path: '/', element: <Skills /> },
-    { path: 'mobiles', element: <Mobiles /> },
-    { path: 'privacy', element: <Privacy /> },
+    { path: 'mobiles.html', element: <Mobiles /> },
+    { path: 'privacy.html', element: <Privacy /> },
     // ...
   ]);
   return routes;

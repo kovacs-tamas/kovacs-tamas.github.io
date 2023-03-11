@@ -25,8 +25,8 @@ class Card extends React.Component {
           </a>
 
           <Link to="/">Home</Link>
-          <Link to="/privacy">Privacy</Link>
-          <Link to="/mobiles">Mobiles</Link>
+          <Link to="/privacy.html">Privacy</Link>
+          <Link to="/mobiles.html">Mobiles</Link>
 
           <h1>Tamás Kovács</h1>
           <h2>
