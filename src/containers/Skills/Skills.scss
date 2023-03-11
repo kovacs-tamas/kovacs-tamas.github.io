@@ -1,16 +1,15 @@
 .parent {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    height: 100vh;
-    width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  width: 100vw;
 }
 
-
 @media screen and (max-width: 1000px) {
-.parent {
+  .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -20,7 +19,7 @@
 }
 
 @media screen and (max-width: 800px) {
-.parent {
+  .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -30,7 +29,7 @@
 }
 
 @media screen and (max-width: 600px) {
-.parent {
+  .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -40,13 +39,13 @@
 }
 
 .parent div {
-    background-position: center center;
-    background-size: cover;
-    border-radius: 10px;
-    margin: 4px;
-     filter: blur(4px);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 4px;
+  filter: blur(4px);
 
-     &:hover {
-        filter: blur(0);
-     }
+  &:hover {
+    filter: blur(0);
+  }
 }

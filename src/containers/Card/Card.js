@@ -9,6 +9,7 @@ class Card extends React.Component {
     return (
       <div className="card">
         <div>
+          <h1>Tamás Kovács</h1>
           <a
             className="button linkedin rounded-10"
             href="https://www.linkedin.com/in/kovacs-tamas/"
@@ -28,10 +29,6 @@ class Card extends React.Component {
           <Link to="/privacy.html">Privacy</Link>
           <Link to="/mobiles.html">Mobiles</Link>
 
-          <h1>Tamás Kovács</h1>
-          <h2>
-            <em>pronounced = tamash kovatsch</em>
-          </h2>
           <img src={tamas} className="tamas shadowed" alt="Tamas Kovacs" />
         </div>
       </div>

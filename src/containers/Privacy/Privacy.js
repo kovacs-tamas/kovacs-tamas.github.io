@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './Privacy.scss';
+
 class Privacy extends React.Component {
   render() {
     return (
-      <div>
+      <div className="privacy">
         <h3>Datenschutzerklärung</h3>
         <h4>Allgemeiner Hinweis und Pflichtinformationen</h4>
         <h5>Benennung der verantwortlichen Stelle</h5>
@@ -179,16 +181,6 @@ class Privacy extends React.Component {
             </a>
           </small>
         </p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
       </div>
     );
   }

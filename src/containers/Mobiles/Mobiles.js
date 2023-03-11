@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Mobiles.scss';
+
 class Mobiles extends React.Component {
   phones = [
     'Alcatel OT 302',
@@ -86,14 +88,14 @@ class Mobiles extends React.Component {
     ));
 
     return (
-      <article>
-        <h3>Oh my good, i had 68 phones in 23 years :D</h3>
+      <div className="mobiles">
+        <h3>Oh my good, i had {this.phones.length} phones in 23 years :D</h3>
         <p>
           Here is a list about phones i had before. I owned some devices more
           times :)
         </p>
         <ol>{listItems}</ol>
-      </article>
+      </div>
     );
   }
 }
