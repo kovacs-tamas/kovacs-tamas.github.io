@@ -10,24 +10,16 @@ class Card extends React.Component {
       <div className="card">
         <div>
           <h1>Tamás Kovács</h1>
-          <a
-            className="button linkedin rounded-10"
-            href="https://www.linkedin.com/in/kovacs-tamas/"
-            title="LinkedIn"
-          >
-            Linkedin
-          </a>
-          <a
-            className="button github rounded-10"
-            href="https://github.com/kovacs-tamas"
-            title="GitHub"
-          >
-            Github
-          </a>
 
-          <Link to="/">Home</Link>
+          <Link to="/" className="home-link">
+            &#8962;
+          </Link>
           <Link to="/privacy.html">Privacy</Link>
           <Link to="/mobiles.html">Mobiles</Link>
+
+          <a href="https://www.linkedin.com/in/kovacs-tamas/">Linkedin</a>
+          <a href="https://github.com/kovacs-tamas">Github</a>
+          <a href="https://twitter.com/lengfelderr">Twitter</a>
 
           <img src={tamas} className="tamas shadowed" alt="Tamas Kovacs" />
         </div>

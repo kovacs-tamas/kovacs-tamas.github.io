@@ -1,46 +1,107 @@
 html {
   background-color: black;
   overflow-x: hidden;
-  //   background: white;
-
   font: normal normal normal 14px/16px 'Helvetica Neue', Arial, sans-serif;
-  //   background: linear-gradient(to bottom, white, #c8c8c8);
-  //   padding: 0;
-  //   height: 100vh;
-  //   margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  color: #232323;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(white),
+    to(#c8c8c8)
+  );
+}
+
+// html,
+// body {
+//   background: -webkit-gradient(
+//     linear,
+//     left top,
+//     left bottom,
+//     from(black),
+//     to(#565656)
+//   );
+// }
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  z-index: -1;
+  background: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
+  html,
+  body {
+    color: #e3e3e3;
     background: -webkit-gradient(
       linear,
       left top,
       left bottom,
       from(black),
       to(#565656)
-    );
+    ) !important;
   }
-  body {
-    color: #d0d0d0;
-  }
+
+  // body::before {
+  //   content: '';
+  //   position: fixed;
+  //   top: -50%;
+  //   right: -50%;
+  //   bottom: -50%;
+  //   left: -50%;
+  //   z-index: -1;
+  //   background: #000000 !important;
+  // }
+
   a {
     color: red;
   }
 }
-@media (prefers-color-scheme: light) {
-  html {
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(white),
-      to(#c8c8c8)
-    );
-  }
-  body {
-    color: #343434;
-  }
-  a {
-    color: red;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   html,
+//   body {
+//     background: -webkit-gradient(
+//       linear,
+//       left top,
+//       left bottom,
+//       from(white),
+//       to(#c8c8c8)
+//     );
+//   }
+
+//   // body::before {
+//   //   content: '';
+//   //   position: fixed;
+//   //   top: -50%;
+//   //   right: -50%;
+//   //   bottom: -50%;
+//   //   left: -50%;
+//   //   z-index: -1;
+//   //   background: -webkit-gradient(
+//   //     linear,
+//   //     left top,
+//   //     left bottom,
+//   //     from(white),
+//   //     to(#c8c8c8)
+//   //   );
+//   // }
+
+//   a {
+//     color: red;
+//   }
+// }
