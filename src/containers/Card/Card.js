@@ -1,7 +1,8 @@
 import React from 'react';
-import tamas from '../images/tamas.jpg';
+import tamas from './tamas.jpg';
+import { Link } from 'react-router-dom';
 
-import './card.scss';
+import './Card.scss';
 
 class Card extends React.Component {
   render() {
@@ -15,7 +16,6 @@ class Card extends React.Component {
           >
             Linkedin
           </a>
-
           <a
             className="button github rounded-10"
             href="https://github.com/kovacs-tamas"
@@ -24,13 +24,9 @@ class Card extends React.Component {
             Github
           </a>
 
-          <a
-            className="button medium rounded-10"
-            href="https://medium.com/@tamaskovacs"
-            title="Medium"
-          >
-            Medium
-          </a>
+          <Link to="/">Home</Link>
+          <Link to="/privacy">Privacy</Link>
+          <Link to="/mobiles">Mobiles</Link>
 
           <h1>Tamás Kovács</h1>
           <h2>

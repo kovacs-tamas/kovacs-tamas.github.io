@@ -86,7 +86,7 @@ class Mobiles extends React.Component {
     ));
 
     return (
-      <article className="shadowed personal rounded-10" id="Mobiles">
+      <article>
         <h3>Oh my good, i had 68 phones in 23 years :D</h3>
         <p>
           Here is a list about phones i had before. I owned some devices more
