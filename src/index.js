@@ -9,6 +9,19 @@ import Card from './containers/Card/Card';
 
 import './index.scss';
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+export default function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 const App = () => {
   let routes = useRoutes([
     { path: '/', element: <Skills /> },
@@ -22,6 +35,7 @@ const App = () => {
 const AppWrapper = () => {
   return (
     <Router>
+      <ScrollToTop />
       <App />
       <Card />
     </Router>
