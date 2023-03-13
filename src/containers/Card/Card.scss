@@ -11,50 +11,32 @@
     border-radius: 20px 20px 0px 0px;
     display: block;
     width: 90%;
-    max-width: 400px;
-    background-color: rgba(240, 240, 240, 0.9);
+    max-width: 420px;
+    background-color: rgba(240, 240, 240, 0.68);
     position: relative;
     margin: 0 auto;
-    padding: 15px 20px 20px 20px;
+    padding: 15px 10px 20px 10px;
+    text-align: center;
     box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
-
-    .tamas {
-      outline: none;
-      width: 100px;
-      border-radius: 50px;
-      position: absolute;
-      border: 2px solid white;
-      background-color: white;
-      top: -50px;
-      right: 20px;
-      -webkit-transition: 0.5s ease-in;
-      transition: 0.5s ease-in;
-      -o-box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
-      -ms-box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
-      -webkit-box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
-      box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
-    }
   }
   a {
     color: red;
-    padding-right: 10px;
-  }
-  .home-link {
-    font-size: 20px;
-    text-decoration: none;
-  }
-  em {
-    font-style: italic;
-    color: gray;
-    font-size: 14px;
-    font-weight: normal;
+    padding: 10px;
   }
 }
 
-@media screen and (max-width: 440px) {
+@media (prefers-color-scheme: dark) {
+  .card {
+    div {
+      background-color: rgba(70, 70, 70, 0.68);
+    }
+  }
+}
+@media screen and (max-width: 420px) {
   .card {
     div {
       border-radius: 0;
+      width: 100%;
     }
   }
 }
