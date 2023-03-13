@@ -21,7 +21,17 @@
   }
   a {
     color: red;
-    padding: 10px;
+    padding-right: 10px;
+    float: right;
+    &.icon {
+      padding: 0;
+      float: left;
+      width: 23px;
+      height: 23px;
+      display: block;
+      background-size: cover;
+      margin-right: 10px;
+    }
   }
 }
 
