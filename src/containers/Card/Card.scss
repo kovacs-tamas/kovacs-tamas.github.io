@@ -4,33 +4,39 @@
   right: 0;
   left: 0;
   z-index: 999;
-  h1 {
-    color: #343434;
-  }
+  text-align: center;
+
   div {
     border-radius: 20px 20px 0px 0px;
     display: block;
-    width: 90%;
-    max-width: 420px;
+    width: 100%;
+    max-width: 390px;
     background-color: rgba(240, 240, 240, 0.68);
     position: relative;
     margin: 0 auto;
-    padding: 15px 10px 20px 10px;
-    text-align: center;
-    box-shadow: 7px 10px 5px -4px rgba(0, 0, 0, 0.26);
-  }
-  a {
-    color: red;
-    padding-right: 10px;
-    float: right;
-    &.icon {
-      padding: 0;
-      float: left;
-      width: 23px;
-      height: 23px;
-      display: block;
-      background-size: cover;
+    padding: 15px 20px 20px 20px;
+    text-align: right;
+
+    a {
+      color: red;
       margin-right: 10px;
+      text-decoration: none;
+
+      &.icon {
+        padding: 0;
+        float: left;
+        width: 23px;
+        height: 23px;
+        display: block;
+        background-size: cover;
+        margin-right: 10px;
+      }
+    }
+    span.spacer {
+      float: right;
+      display: none;
+      width: 30px;
+      height: 10px;
     }
   }
 }
@@ -42,11 +48,14 @@
     }
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 390px) {
   .card {
     div {
       border-radius: 0;
-      width: 100%;
+      max-width: 100% !important;
+      span.spacer {
+        display: block !important;
+      }
     }
   }
 }

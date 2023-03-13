@@ -16,6 +16,7 @@ class Card extends React.Component {
         <div>
           <Link to="/privacy.html">Privacy</Link>
           <Link to="/mobiles.html">Mobiles</Link>
+          <span className="spacer" />
           <Link
             className="icon"
             to="/"
