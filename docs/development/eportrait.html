@@ -6,10 +6,29 @@
     />
     <script>
       window.addEventListener('message', ({ data }) => {
+        console.log(data);
+
         if (data.from === 'EPORTRAIT_UI') {
           console.log(data);
-          const iframe = document.getElementById('ui-iframe');
-          iframe.height = data.height;
+
+          if (data.height) {
+            const iframe = document.getElementById('ui-iframe');
+            iframe.height = data.height;
+          }
+
+          if (data.isLoaded) {
+            document.getElementById('ui-iframe').contentWindow.postMessage(
+              {
+                type: 'POST_FIELDS',
+                fields: {
+                  firstname: 'bubu',
+                  lastname: 'Bibi',
+                  birthdate: '1978-12-11',
+                },
+              },
+              'https://epr-wpn-dev.eportrait.de/'
+            );
+          }
         }
       });
     </script>
