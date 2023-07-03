@@ -37,6 +37,9 @@ class Card extends React.Component {
             className="icon"
             style={{ backgroundImage: `url(${twitter})` }}
           ></a>
+          <a rel="me" href="https://mastodon.social/@tamaskovacs">
+            Mastodon
+          </a>
           &nbsp;
         </div>
       </div>
