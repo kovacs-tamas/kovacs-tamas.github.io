@@ -6,6 +6,7 @@ import Skills from './containers/Skills/Skills';
 import Mobiles from './containers/Mobiles/Mobiles';
 import Privacy from './containers/Privacy/Privacy';
 import Missing from './containers/Missing/Missing';
+import Alma from './containers/Alma/Alma';
 import Card from './containers/Card/Card';
 
 import './index.scss';
@@ -28,6 +29,7 @@ const App = () => {
     { path: '/', element: <Skills /> },
     { path: 'mobiles.html', element: <Mobiles /> },
     { path: 'privacy.html', element: <Privacy /> },
+    { path: 'alma.html', element: <Alma /> },
     { path: '*', element: <Missing /> },
     // ...
   ]);
