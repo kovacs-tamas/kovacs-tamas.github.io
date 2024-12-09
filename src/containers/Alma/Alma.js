@@ -1,54 +1,69 @@
 import React from 'react';
-
-import { Link } from 'react-router-dom';
-
-import home from '../../images/home.png';
-import github from '../../images/github.png';
-import linkedin from '../../images/linkedin.png';
+import { useEffect } from 'react';
 
 import './Alma.scss';
 
-class Alma extends React.Component {
-  files = [
-    'https://babelium.blob.core.windows.net/staging/response/54/69ca56b2-e648-4684-b56e-e42588fb3ffd.webm?1730811387881',
-    'https://babelium.blob.core.windows.net/production/response/51539/d93af598-95f3-40b6-8bc3-e892aff6d22d.webm?1730141792324',
-    'https://babelium.blob.core.windows.net/staging/response/55/014feb9e-cc49-495f-9324-61a42c8b2ca0.webm?1730812371608',
+const Alma = () => {
+  const files = [
+    'https://babelium.blob.core.windows.net/staging/response/145/7ee1b47f-d2ff-4626-9a96-8e942caabc3c.webm?1733731815370',
+    'https://babelium.blob.core.windows.net/staging/response/145/026010a8-6259-4c1b-ab4b-7d3dcc26e62d.webm?1733731814419',
+    'https://babelium.blob.core.windows.net/staging/response/146/66b9da8f-8a02-45b0-ac01-e68415597f4a.webm?1733736993295',
   ];
-  play(id) {
-    var audio = document.createElement('audio');
-    audio.src = this.files[id];
-    audio.play();
-    audio.onloadeddata = function (data) {
-      console.log('audio loaded', this, data);
-    };
+
+  const audioPlayers = [];
+
+  useEffect(() => {
+    for (let i = 0; i < files.length; i++) {
+      let audio = document.createElement('audio');
+      audio.src = files[i];
+      // audio.muted = true;
+      audio.playsInline = true;
+      audio.preload = 'auto';
+      // audio.currentTime = 1;
+      audio.autoplay = true;
+      audio.onloadeddata = function (data) {
+        console.log('audio loaded', this, data);
+      };
+      audio.onpause = function (data) {
+        console.log('audio onpause', this, data);
+      };
+      audio.onended = function (data) {
+        console.log('audio onended', this, data);
+      };
+      audio.onseeked = function (data) {
+        console.log('audio onseeked', this, data);
+      };
+
+      audioPlayers.push(audio);
+    }
+  }, []);
+
+  function play(id) {
+    audioPlayers[id].currentTime = 0.01;
+    console.log(audioPlayers, id, audioPlayers[id]);
+    audioPlayers[id].load();
+    audioPlayers[id].play();
   }
 
-  render() {
-    return (
-      <div className="mobiles">
-        {this.files.map((audioURL, i) => (
-          <div key={`audio_${i}`}>
-            <video
-              id={'video' + i}
-              controls
-              playsInline
-              style={{
-                width: 200,
-                display: 'block',
-              }}
-              src={audioURL}
-            />
-          </div>
+  return (
+    <div className="mobiles">
+      <div className="players">
+        {audioPlayers.map((audioURL, i) => (
+          <>{audioURL}</>
         ))}
-        <div>
-          <button onClick={() => this.play(0)}>Firefox</button>
-          <button onClick={() => this.play(1)}>Firefox / Constantin</button>
-          <button onClick={() => this.play(2)}>Chrome</button>
-          &nbsp;
-        </div>
       </div>
-    );
-  }
-}
+      <div>
+        <button onClick={() => play(0)}>First {files[0]}</button>
+        <br />
+        <br />
+        <button onClick={() => play(1)}>Second {files[1]}</button>
+        <br />
+        <br />
+        <button onClick={() => play(2)}>Third - should work {files[2]}</button>
+        <br />
+      </div>
+    </div>
+  );
+};
 
 export default Alma;
