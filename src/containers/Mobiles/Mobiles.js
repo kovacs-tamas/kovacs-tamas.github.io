@@ -49,6 +49,8 @@ class Mobiles extends React.Component {
     'Nokia 8210',
     'Pixel 2',
     'Pixel 3a',
+    'Pixel 4a',
+    'Pixel 7a',
     'Samsung Black Jack',
     'Samsung Corby',
     'Samsung Galaxy S3',
