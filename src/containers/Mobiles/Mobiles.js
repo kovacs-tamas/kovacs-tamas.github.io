@@ -26,6 +26,7 @@ class Mobiles extends React.Component {
     'Apple iPhone 12 Pro',
     'Apple iPhone 13 Pro',
     'Apple iPhone 15 Pro Max',
+    'Apple iPhone 17 Pro',
     'Motorola C336',
     'Motorola V300',
     'Nokia 6500 Classic',
