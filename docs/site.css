@@ -488,6 +488,10 @@ h3 {
     grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.7fr);
     align-items: center;
   }
+
+  .phone-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1020px) {
